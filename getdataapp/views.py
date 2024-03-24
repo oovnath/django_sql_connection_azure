@@ -31,7 +31,7 @@ print("MySQL Database connection successful"),
 cursor = mydb.cursor()
 data_json ={}
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 def get_data(request):
     try:
             row={}
